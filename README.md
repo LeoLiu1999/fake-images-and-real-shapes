@@ -1,6 +1,6 @@
 # Fake Images and Real Shapes
 
-### by Leo Liu
+### by Leo Liu pd 10
 
 ## 3D Solids
 
