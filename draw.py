@@ -237,7 +237,7 @@ def generate_torus( cx, cy, cz, r0, r1, step ):
             points.append([x, y, z])
     return points
 
-def add_spinny(func_in_x, start, end, step):
+def add_spinny(edges, func_in_x, start, end, step):
     points = generate_spinny(func_in_x, start, end, step)
     lat_start = 0
     lat_stop = step
@@ -277,7 +277,7 @@ def add_spinny(func_in_x, start, end, step):
                         points[p1][2] )
     
 
-def generate_spinny(func_in_x, start, end, step): #maybe implement checks for proper functions later
+def generate_spinny(, func_in_x, start, end, step): #maybe implement checks for proper functions later
     points = []
     dx = float(end-start)/step
     for segment_on_curve in range(0, step):        
@@ -292,7 +292,7 @@ def generate_spinny(func_in_x, start, end, step): #maybe implement checks for pr
             points.append([x, y, z])
     return points
 
-def add_stacky(func_in_x, start, end, step, circumradius, shape, rot):
+def add_stacky(edges, func_in_x, start, end, circumradius, shape, rot, step):
     points = generate_stacky(func_in_x, start, end, circumradius, shape, rot, step)
     lat_start = 0
     lat_stop = step
